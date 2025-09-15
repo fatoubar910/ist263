@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 html lang=”en”>
-    <body>
+   
+<body>
+   
     <head>
         <meta charset="utf-8">
 
@@ -23,7 +26,11 @@ html lang=”en”>
         <label for="age1"> 31-60 </label> 
         <input type="radio" od="age3" name="age" value="1000">
         <label for="age1"> 61-100 </label> 
-         </form>
+        
+    
+    
+    
+    </form>
     <body>
 
     </html>
