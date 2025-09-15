@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    
+   <html lang=”en”>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title> Week 4 - Tables and Forms</title>
+        </head>
+
+
+        <body>
+            <h1> Tables </h1>
+            <table border="2">
+                <caption> Population</caption>
+                <tr> 
+                    <th> Country </th>
+                    <th> Population </th>
+                    <th> Percentage </th>
+                </tr>
+              
+                <tr>
+                    <td> China </td>
+                    <td> 15000 </td>
+                    <td> 50% </td>
+                </tr>
+
+                <tr> 
+                
+                    <td> India </td>
+                    <td> 1543 </td>
+                    <td> 40% </td>    
+                 </tr>
+
+                 <tr> 
+                    <td> random </td>
+                    <td> 1543 </td>
+                    <td> 40% </td>    
+                 </tr>
