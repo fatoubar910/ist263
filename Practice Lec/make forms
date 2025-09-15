@@ -1,0 +1,25 @@
+html lang=”en”>
+
+    <head>
+        <meta charset="utf-8">
+
+    </table>
+    <h1> Forms </h1>
+    <form action="" method="">
+        <label for="fname"> First name: </label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <br> 
+        <label> for="comments">Comments: </label><br>
+        <textarea> id="comments" name="comments" rows="4" cols="40"> </textarea>
+        <br>
+
+        <input type="submit" value="Send Form">
+
+
+
+
+
+         </form>
+    <body>
+
+    </html>
