@@ -27,8 +27,17 @@ html lang=”en”>
         <input type="radio" id="age3" name="age" value="100">
         <label for="age1"> 61-100 </label> 
         
+    <p> What type of vehicle do you have? </p>
+
+    <input type="checkbox" id="vehicle" name="vehicle1"
+    value="Car">
+    <label for="vehicle1"> I have a car</label>
     
-    
+
+
+
+    <label for="cars"> Choose a car:</label>
+    <select name=""
     
     </form>
     <body>
