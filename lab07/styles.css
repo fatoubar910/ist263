@@ -1,19 +1,65 @@
+/* Body background and text */
 body {
-  font-family: "Arial", sans-serif;
+  background-color: #F7F4EF;  /* Soft cream background */
+  color: #3E3E3E;             /* Dark gray text */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
-  color: teal;
+/* Headings */
+h1, h2, h3 {
+  color: #2E2B26;             /* Deep espresso brown for headings */
 }
 
-h1 {
-  font-size: 2em; 
+/* Links (all links outside nav) */
+a {
+  color: #B3742C;             /* Warm brown link color */
+  text-decoration: none;
 }
 
-h2 {
-  font-size: 1.5em; 
+a:hover {
+  color: #C19A6B;             /* Lighter tan on hover */
+  text-decoration: underline;
 }
 
-.evenrow {
-  background-color: lightgray;
+/* Navigation bar */
+nav {
+  background-color: #E6DED1;  /* Light beige background for nav */
+  padding: 10px;              /* Space inside the nav box */
+  margin-bottom: 30px;        /* Space below nav for white space */
+  text-align: center;
+}
+
+/* Navigation links color using descendant selector */
+nav a {
+  color: #4A3B2B;             /* Rich brown navigation links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Navigation link hover highlight using pseudo-selector */
+nav a:hover {
+  background-color: #C19A6B;  /* Tan highlight on hover */
+  color: #F7F4EF;             /* Light cream text when hovered */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Optional: general layout styling for readability */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+  background-color: #E6DED1;  /* Same beige as nav for consistency */
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  color: #4A3B2B;
 }
