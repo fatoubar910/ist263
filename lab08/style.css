@@ -1,0 +1,207 @@
+body {
+    background-color: #F7F4EF;  /* Soft cream background */
+    color: #3E3E3E;             /* Dark gray text */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #2E2B26;             /* Deep espresso brown for headings */
+}
+
+/* Links */
+a {
+    color: #B3742C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C19A6B;
+    text-decoration: underline;
+}
+
+/* ===========================
+   Navigation Bar
+   =========================== */
+nav {
+    background-color: #E6DED1;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: #4A3B2B;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #C19A6B;
+    color: #F7F4EF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   Main Layout
+   =========================== */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+    background-color: #E6DED1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    clear: both;
+    color: #4A3B2B;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+footer .tagline {
+    float: right;
+}
+
+/* ===========================
+   Bio Page Styling
+   =========================== */
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid #C19A6B;
+}
+
+figure img {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+/* ===========================
+   Skills Page Styling
+   =========================== */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skill-category {
+    flex: 1 1 45%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    color: #f47c26;
+    border-bottom: 2px solid #f47c26;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* ===========================
+   Contact Page Styling
+   =========================== */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #f47c26;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e0670e;
+}
+
+/* Map styling */
+iframe {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 768px) {
+    .row,
+    .skills-container {
+        flex-direction: column;
+    }
+
+    footer .tagline {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+
+    figure img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+}
