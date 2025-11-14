@@ -1,36 +1,53 @@
-/* ------------------------------
-   1. HIDE ALL LARGE PLANET IMAGES EXCEPT MERCURY
-------------------------------- */
-#bigpicture img:not(#mercury),
-#planetinfo div:not(#mercuryinfo) {
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slide {
     display: none;
 }
 
-/* ------------------------------
-   2. PAGE LAYOUT (FLOATS)
-------------------------------- */
-#bigpicture {
-    float: left;
-    width: 50%;
-    margin-right: 20px;
+.slide img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-#planetinfo {
-    float: left;
-    width: 40%;
+.caption {
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 0 0 10px 10px;
 }
 
-#thumbnails {
-    clear: both;
+.thumbnails {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-#thumbnails img {
-    width: 80px;
-    margin: 5px;
+.thumbnails img {
+    width: 60px;
+    margin: 0 5px;
     cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
 }
 
-img {
-    max-width: 100%;
+.thumbnails img:hover,
+.thumbnails img.active {
+    opacity: 1;
 }

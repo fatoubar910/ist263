@@ -2,31 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 12 Slideshow</title>
+    <title>Planet Slideshow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Planet Slideshow</h1>
 
-<h1>Planet Slideshow</h1>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="mercury.jpg" alt="Mercury">
+            <div class="caption">Mercury</div>
+        </div>
+        <div class="slide fade">
+            <img src="venus.jpg" alt="Venus">
+            <div class="caption">Venus</div>
+        </div>
+        <div class="slide fade">
+            <img src="earth.jpg" alt="Earth">
+            <div class="caption">Earth</div>
+        </div>
+        <div class="slide fade">
+            <img src="mars.jpg" alt="Mars">
+            <div class="caption">Mars</div>
+        </div>
+        <!-- Add more planets as needed -->
+    </div>
 
-<!-- Large planet images -->
-<div id="bigpicture">
-    <img id="mercury" src="mercury.jpg" alt="Mercury">
-    <img id="venus" src="venus.jpg" alt="Venus">
-    <img id="earth" src="earth.jpg" alt="Earth">
-    <img id="mars" src="mars.jpg" alt="Mars">
-    <img id="jupiter" src="jupiter.jpg" alt="Jupiter">
-    <img id="saturn" src="saturn.jpg" alt="Saturn">
-    <img id="uranus" src="uranus.jpg" alt="Uranus">
-    <img id="neptune" src="neptune.jpg" alt="Neptune">
-</div>
+    <div class="thumbnails">
+        <img class="thumb" src="mercury.jpg" alt="Mercury" onclick="currentSlide(1)">
+        <img class="thumb" src="venus.jpg" alt="Venus" onclick="currentSlide(2)">
+        <img class="thumb" src="earth.jpg" alt="Earth" onclick="currentSlide(3)">
+        <img class="thumb" src="mars.jpg" alt="Mars" onclick="currentSlide(4)">
+    </div>
 
-<!-- Planet text info -->
-<div id="planetinfo">
-    <div id="mercuryinfo"><h2>Mercury</h2><p>Smallest planet, closest to the sun.</p></div>
-    <div id="venusinfo"><h2>Venus</h2><p>Hottest planet with thick atmosphere.</p></div>
-    <div id="earthinfo"><h2>Earth</h2><p>Our home planet with abundant water.</p></div>
-    <div id="marsinfo"><h2>Mars</h2><p>The red planet; possible past water.</p></div>
-    <div id="jupiterinfo"><h2>Jupiter</h2><p>Largest planet in the solar system.</p></div>
-    <div id="saturninfo"><h2>Saturn</h2><p>Known for its beautiful ring system.</p></div>
-    <div id="uranusinfo"><h2>Uranus</h2><p>Rotates on
+    <script src="script.js"></script>
+</body>
+</html>
