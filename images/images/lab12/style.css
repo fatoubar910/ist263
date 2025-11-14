@@ -1,0 +1,59 @@
+/* ------------------------------
+   1. HIDE ALL LARGE PLANET IMAGES
+------------------------------- */
+
+/* Hide every planet image except Mercury */
+#venus, 
+#earth, 
+#mars, 
+#jupiter, 
+#saturn, 
+#uranus, 
+#neptune {
+    display: none;
+}
+
+/* Hide all text except Mercury info */
+#venusinfo,
+#earthinfo,
+#marsinfo,
+#jupiterinfo,
+#saturninfo,
+#uranusinfo,
+#neptuneinfo {
+    display: none;
+}
+
+/* ------------------------------
+   2. PAGE LAYOUT (FLOATS)
+------------------------------- */
+
+/* Container for the slideshow */
+#bigpicture {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+}
+
+#planetinfo {
+    float: left;
+    width: 40%;
+}
+
+/* Thumbnails section */
+#thumbnails {
+    clear: both;
+    margin-top: 20px;
+}
+
+/* Thumbnail images */
+#thumbnails img {
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Make sure images don’t overflow */
+img {
+    max-width: 100%;
+}
