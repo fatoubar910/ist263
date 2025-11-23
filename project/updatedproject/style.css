@@ -1,295 +1,71 @@
 /* ===========================
-   Global Styles
+   Personal Page Styling
    =========================== */
-body {
-    background-color: #F7F4EF;  /* Soft cream background */
-    color: #3E3E3E;             /* Dark gray text */
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-/* Headings */
-h1, h2, h3 {
-    color: #2E2B26;             /* Deep espresso brown for headings */
-}
-
-/* Links */
-a {
-    color: #B3742C;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #C19A6B;
-    text-decoration: underline;
-}
-
-/* ===========================
-   Navigation Bar
-   =========================== */
-nav {
-    background-color: #E6DED1;
-    padding: 10px;
-    margin-bottom: 30px;
+/* Center all section headings on the personal page */
+main h2 {
     text-align: center;
-}
-
-nav a {
-    color: #4A3B2B;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #C19A6B;
-    color: #F7F4EF;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-/* ===========================
-   Main Layout
-   =========================== */
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.6;
-}
-
-/* ===========================
-   Footer
-   =========================== */
-footer {
-    background-color: #E6DED1;
-    text-align: center;
-    padding: 10px;
     margin-top: 40px;
-    clear: both;
-    color: #4A3B2B;
-}
-
-footer p {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-footer .tagline {
-    float: right;
-}
-
-/* ===========================
-   Contact Page Styling
-   =========================== */
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;         /* space between rows */
-    max-width: 900px;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.col {
-    flex: 1;
-    background-color: #E6DED1; /* Matches nav/footer for cohesive theme */
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-/* Form inputs */
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 6px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-/* Submit button */
-button {
-    padding: 10px 18px;
-    border-radius: 6px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Map iframe */
-iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 12px;
-    border: none;
-}
-
-/* ===========================
-   Responsive Design
-   =========================== */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-
-    footer .tagline {
-        float: none;
-        display: block;
-        margin-top: 10px;
-    }
-}
-
-/* ===========================
-   Skills Page Styling
-   =========================== */
-
-/* Center the main heading */
-.skills-heading {
-    text-align: center;
-    margin: 30px 0;
-}
-
-/* Skills container with flex layout */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* space between columns and rows */
-}
-
-/* Skill boxes */
-.skill-category {
-    flex: 1 1 45%; /* two columns on larger screens */
-    background-color: #E6DED1; /* consistent with nav/footer */
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2E2B26;
 }
 
-/* Optional: style the list inside skill boxes */
-.skill-category ul {
-    list-style-type: square;
-    padding-left: 20px;
+/* Paragraph spacing for personal page sections */
+main section p {
+    margin-bottom: 20px;
+    line-height: 1.7;
 }
 
-/* Hover effect for skill boxes */
-.skill-category:hover {
-    transform: translateY(-5px);       /* lifts the box slightly */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* deeper shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
-}
-/* Hover effect for contact page boxes */
-.col:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.18);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Flexbox for table and image */
-.skills-flexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   /* vertically align table and image */
-    gap: 20px;             /* space between table and image */
-    margin: 30px 0;        /* space above and below flexbox */
-}
-
-/* Center the table in its container */
-.skillstable table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 80%;            /* optional: make table slightly smaller */
-}
-
-/* Optional: add padding to table cells */
-.skillstable th, .skillstable td {
-    padding: 8px 12px;
+/* Figures and captions */
+main figure {
     text-align: center;
+    margin: 20px 0;
 }
 
-/* Center the image in its container */
-.skillsimage {
-    text-align: center;
+main figcaption {
+    font-size: 0.95rem;
+    color: #4A3B2B;
+    margin-top: 5px;
+    font-style: italic;
 }
 
-/* Responsive adjustment for table + image flexbox */
-@media (max-width: 768px) {
-    .skills-flexbox {
-        flex-direction: column;  /* stack table above image */
-        align-items: center;     /* center both elements horizontally */
-    }
-
-    .skillstable, .skillsimage {
-        width: 100%;             /* full width for smaller screens */
-    }
-
-    .skillsimage img {
-        max-width: 80%;          /* scale image down a bit on mobile */
-        height: auto;
-    }
-}
-
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: #fff;
-    padding: 8px 16px;
-    z-index: 100;
-    text-decoration: none;
-}
-
-.skip-link:focus {
-    top: 0;
-}
-
-/* Flexbox for media + text sections */
+/* Flexbox for hobbies/media sections */
 .hobby-flexbox {
     display: flex;
     gap: 30px;               /* space between media and text */
-    align-items: flex-start; /* aligns video/image with top of text */
+    align-items: flex-start; /* align top of text and media */
     margin: 30px 0;
 }
 
 .hobby-media, .hobby-text {
-    flex: 1;                 /* equal width, adjust if needed */
+    flex: 1;                 /* equal width for left/right */
 }
 
-/* Responsive adjustment for smaller screens */
+/* Flip flexbox for media right layout */
+.hobby-flexbox.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Make videos and images responsive in flex sections */
+.hobby-media video,
+.hobby-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Media queries for small screens */
 @media (max-width: 768px) {
     .hobby-flexbox {
-        flex-direction: column; /* stack media above text on mobile */
+        flex-direction: column !important; /* stack media and text */
     }
 
     .hobby-media, .hobby-text {
         width: 100%;
     }
 
-    .hobby-media video {
-        width: 100%;           /* make video responsive */
-        height: auto;
+    main h2 {
+        font-size: 1.6rem;
     }
 }
