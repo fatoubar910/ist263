@@ -265,3 +265,31 @@ iframe {
 .skip-link:focus {
     top: 0;
 }
+
+/* Flexbox for media + text sections */
+.hobby-flexbox {
+    display: flex;
+    gap: 30px;               /* space between media and text */
+    align-items: flex-start; /* aligns video/image with top of text */
+    margin: 30px 0;
+}
+
+.hobby-media, .hobby-text {
+    flex: 1;                 /* equal width, adjust if needed */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .hobby-flexbox {
+        flex-direction: column; /* stack media above text on mobile */
+    }
+
+    .hobby-media, .hobby-text {
+        width: 100%;
+    }
+
+    .hobby-media video {
+        width: 100%;           /* make video responsive */
+        height: auto;
+    }
+}
