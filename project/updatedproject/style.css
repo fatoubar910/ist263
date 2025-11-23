@@ -101,44 +101,71 @@ footer .tagline {
 }
 
 /* ===========================
-   Personal Page Styles
+   Professional / Personal Page Styling
    =========================== */
 
-/* Page Header */
-.page-header h1 {
-    margin-bottom: 10px;
-}
-
-.page-subtitle {
-    font-style: italic;
-    font-size: 1.1rem;
-    margin-top: 0;
-}
-
-/* Centered Media */
-.centered-media {
+/* Center all h2 headings on these pages */
+main h2 {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 20px 0;
+    color: #2E2B26; /* same as other headings */
 }
 
-.centered-media img,
-.centered-media video {
+/* Media under text layout */
+.main-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-media img,
+.main-media video {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
 }
 
-.centered-media figcaption {
-    margin-top: 5px;
+/* Figcaption styling */
+.main-media figcaption {
+    margin-top: 8px;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    color: #3E3E3E;
+}
+
+/* Timeline styling */
+.timeline {
+    max-width: 700px;
+    margin: 30px auto;
+    padding-left: 20px;
+    text-align: left;
+    list-style-type: none;
+    border-left: 3px solid #B3742C; /* subtle vertical line for timeline */
+}
+
+.timeline li {
+    position: relative;
+    padding: 10px 0 10px 20px;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: -9px; /* aligns circle with line */
+    top: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #B3742C;
+    border-radius: 50%;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .centered-media img,
-    .centered-media video {
-        max-width: 100%;
-        height: auto;
+    .timeline {
+        padding-left: 15px;
+    }
+    .timeline li::before {
+        left: -8px;
+        width: 10px;
+        height: 10px;
     }
 }
