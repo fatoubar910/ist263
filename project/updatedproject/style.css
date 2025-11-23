@@ -2,8 +2,8 @@
    Global Styles
    =========================== */
 body {
-    background-color: #F7F4EF;  /* Soft cream background */
-    color: #3E3E3E;             /* Dark gray text */
+    background-color: #F7F4EF;
+    color: #3E3E3E;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,8 +11,8 @@ body {
 
 /* Headings */
 h1, h2, h3 {
-    color: #2E2B26;             
-    text-align: center;          /* Center all headings by default */
+    color: #2E2B26;
+    text-align: center; /* All headings centered */
 }
 
 /* Links */
@@ -26,9 +26,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===========================
-   Navigation Bar
-   =========================== */
+/* Navigation */
 nav {
     background-color: #E6DED1;
     padding: 10px;
@@ -50,9 +48,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* ===========================
-   Main Layout
-   =========================== */
+/* Main layout */
 main {
     padding: 20px;
     max-width: 900px;
@@ -60,9 +56,7 @@ main {
     line-height: 1.6;
 }
 
-/* ===========================
-   Footer
-   =========================== */
+/* Footer */
 footer {
     background-color: #E6DED1;
     text-align: center;
@@ -81,9 +75,7 @@ footer .tagline {
     float: right;
 }
 
-/* ===========================
-   Skip Link Accessibility
-   =========================== */
+/* Accessibility skip link */
 .visually-hidden {
     position: absolute;
     left: -10000px;
@@ -123,35 +115,14 @@ footer .tagline {
     margin-top: 0;
 }
 
-/* Flexbox for Lash Tech & Skateboarding */
-.hobby-flexbox {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    margin: 30px 0;
-}
-
-.hobby-flexbox.row-reverse {
-    flex-direction: row-reverse; /* for skateboarding media on right */
-}
-
-.hobby-media, .hobby-text {
-    flex: 1;
-}
-
-.hobby-media video, .hobby-media img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-/* Centered media for figures under text */
+/* Centered Media */
 .centered-media {
     text-align: center;
     margin: 30px 0;
 }
 
-.centered-media img {
+.centered-media img,
+.centered-media video {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
@@ -165,15 +136,8 @@ footer .tagline {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .hobby-flexbox {
-        flex-direction: column;
-    }
-
-    .hobby-media, .hobby-text {
-        width: 100%;
-    }
-
-    .hobby-media video, .hobby-media img {
+    .centered-media img,
+    .centered-media video {
         max-width: 100%;
         height: auto;
     }
