@@ -1,71 +1,180 @@
 /* ===========================
-   Personal Page Styling
+   Global Styles
+   =========================== */
+body {
+    background-color: #F7F4EF;  /* Soft cream background */
+    color: #3E3E3E;             /* Dark gray text */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #2E2B26;             
+    text-align: center;          /* Center all headings by default */
+}
+
+/* Links */
+a {
+    color: #B3742C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C19A6B;
+    text-decoration: underline;
+}
+
+/* ===========================
+   Navigation Bar
+   =========================== */
+nav {
+    background-color: #E6DED1;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: #4A3B2B;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #C19A6B;
+    color: #F7F4EF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   Main Layout
+   =========================== */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+    background-color: #E6DED1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    clear: both;
+    color: #4A3B2B;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+footer .tagline {
+    float: right;
+}
+
+/* ===========================
+   Skip Link Accessibility
+   =========================== */
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ===========================
+   Personal Page Styles
    =========================== */
 
-/* Center all section headings on the personal page */
-main h2 {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #2E2B26;
+/* Page Header */
+.page-header h1 {
+    margin-bottom: 10px;
 }
 
-/* Paragraph spacing for personal page sections */
-main section p {
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-
-/* Figures and captions */
-main figure {
-    text-align: center;
-    margin: 20px 0;
-}
-
-main figcaption {
-    font-size: 0.95rem;
-    color: #4A3B2B;
-    margin-top: 5px;
+.page-subtitle {
     font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0;
 }
 
-/* Flexbox for hobbies/media sections */
+/* Flexbox for Lash Tech & Skateboarding */
 .hobby-flexbox {
     display: flex;
-    gap: 30px;               /* space between media and text */
-    align-items: flex-start; /* align top of text and media */
+    gap: 30px;
+    align-items: flex-start;
     margin: 30px 0;
 }
 
-.hobby-media, .hobby-text {
-    flex: 1;                 /* equal width for left/right */
-}
-
-/* Flip flexbox for media right layout */
 .hobby-flexbox.row-reverse {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* for skateboarding media on right */
 }
 
-/* Make videos and images responsive in flex sections */
-.hobby-media video,
-.hobby-media img {
+.hobby-media, .hobby-text {
+    flex: 1;
+}
+
+.hobby-media video, .hobby-media img {
     width: 100%;
     height: auto;
     border-radius: 12px;
 }
 
-/* Media queries for small screens */
+/* Centered media for figures under text */
+.centered-media {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.centered-media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.centered-media figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .hobby-flexbox {
-        flex-direction: column !important; /* stack media and text */
+        flex-direction: column;
     }
 
     .hobby-media, .hobby-text {
         width: 100%;
     }
 
-    main h2 {
-        font-size: 1.6rem;
+    .hobby-media video, .hobby-media img {
+        max-width: 100%;
+        height: auto;
     }
 }
