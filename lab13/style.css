@@ -265,3 +265,7 @@ iframe {
 .skip-link:focus {
     top: 0;
 }
+
+.test-font {
+    font-family: 'Lora', serif;
+}
