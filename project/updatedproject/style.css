@@ -1,171 +1,65 @@
-/* ===========================
-   Global Styles
-   =========================== */
+/* Body background and text */
 body {
-    background-color: #F7F4EF;
-    color: #3E3E3E;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #F7F4EF;  /* Soft cream background */
+  color: #3E3E3E;             /* Dark gray text */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Headings */
 h1, h2, h3 {
-    color: #2E2B26;
-    text-align: center; /* All headings centered */
+  color: #2E2B26;             /* Deep espresso brown for headings */
 }
 
-/* Links */
+/* Links (all links outside nav) */
 a {
-    color: #B3742C;
-    text-decoration: none;
+  color: #B3742C;             /* Warm brown link color */
+  text-decoration: none;
 }
 
 a:hover {
-    color: #C19A6B;
-    text-decoration: underline;
+  color: #C19A6B;             /* Lighter tan on hover */
+  text-decoration: underline;
 }
 
-/* Navigation */
+/* Navigation bar */
 nav {
-    background-color: #E6DED1;
-    padding: 10px;
-    margin-bottom: 30px;
-    text-align: center;
+  background-color: #E6DED1;  /* Light beige background for nav */
+  padding: 10px;              /* Space inside the nav box */
+  margin-bottom: 30px;        /* Space below nav for white space */
+  text-align: center;
 }
 
+/* Navigation links color using descendant selector */
 nav a {
-    color: #4A3B2B;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+  color: #4A3B2B;             /* Rich brown navigation links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
+/* Navigation link hover highlight using pseudo-selector */
 nav a:hover {
-    background-color: #C19A6B;
-    color: #F7F4EF;
-    padding: 5px;
-    border-radius: 5px;
+  background-color: #C19A6B;  /* Tan highlight on hover */
+  color: #F7F4EF;             /* Light cream text when hovered */
+  padding: 5px;
+  border-radius: 5px;
 }
 
-/* Main layout */
+/* Optional: general layout styling for readability */
 main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
-    background-color: #E6DED1;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-    clear: both;
-    color: #4A3B2B;
-}
-
-footer p {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-footer .tagline {
-    float: right;
-}
-
-/* Accessibility skip link */
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: #fff;
-    padding: 8px 16px;
-    z-index: 100;
-    text-decoration: none;
-}
-
-.skip-link:focus {
-    top: 0;
-}
-
-/* ===========================
-   Professional / Personal Page Styling
-   =========================== */
-
-/* Center all h2 headings on these pages */
-main h2 {
-    text-align: center;
-    margin: 30px 0 20px 0;
-    color: #2E2B26; /* same as other headings */
-}
-
-/* Media under text layout */
-.main-media {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.main-media img,
-.main-media video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-/* Figcaption styling */
-.main-media figcaption {
-    margin-top: 8px;
-    font-style: italic;
-    font-size: 0.95rem;
-    color: #3E3E3E;
-}
-
-/* Timeline styling */
-.timeline {
-    max-width: 700px;
-    margin: 30px auto;
-    padding-left: 20px;
-    text-align: left;
-    list-style-type: none;
-    border-left: 3px solid #B3742C; /* subtle vertical line for timeline */
-}
-
-.timeline li {
-    position: relative;
-    padding: 10px 0 10px 20px;
-}
-
-.timeline li::before {
-    content: '';
-    position: absolute;
-    left: -9px; /* aligns circle with line */
-    top: 12px;
-    width: 12px;
-    height: 12px;
-    background-color: #B3742C;
-    border-radius: 50%;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .timeline {
-        padding-left: 15px;
-    }
-    .timeline li::before {
-        left: -8px;
-        width: 10px;
-        height: 10px;
-    }
+  background-color: #E6DED1;  /* Same beige as nav for consistency */
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  color: #4A3B2B;
 }
