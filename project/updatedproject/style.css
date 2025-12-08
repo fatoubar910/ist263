@@ -270,9 +270,39 @@ iframe {
     font-family: 'Lora', serif;
 }
 
-.centered-media img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* centers image */
+.slideshow-container {
+    max-width: 350px;   /* SMALLER size */
+    position: relative;
+    margin: auto;
 }
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Navigation arrow buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    user-select: none;
+}
+
+.prev { left: 0; }
+.next { right: 0; }

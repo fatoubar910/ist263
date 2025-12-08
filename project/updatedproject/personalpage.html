@@ -13,6 +13,27 @@
 
     <link rel="apple-touch-icon" href="favicon.ico">
 </head>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+function changeSlide(n) {
+    slideIndex += n - 1;
+    showSlides();
+}
+</script>
+
 <body>
 
     <!-- Skip to Content -->
@@ -53,32 +74,33 @@
         </section>
 
         <!-- Section 2: Lash Tech -->
+<!-- Section 2: Lash Tech -->
 <section>
     <h2>Lash Tech</h2>
-
-    <figure class="centered-media">
-        <img src="E4160534-3C6A-4C5F-B355-578FE26526AA_1_105_c.jpeg" 
-             alt="Lash extension work example" 
-             width="600">
-        <figcaption>An example of one of my lash clients</figcaption>
-    </figure>
-
+     
     <p>
         My journey as a lash tech began during quarantine, when I would just practice on dolls out of boredom. 
-        Growing up surrounded by family entrepreneurs, I had always been drawn to creativity and business. 
-        Once I arrived at college, I started practicing on my roommate, and by the summer of 2024, I took a 
-        professional lash course. In July 2024, I officially launched my business, and ever since, I have loved 
-        owning and managing my own venture. Running my business has taught me discipline, customer service, 
-        creativity, and the joy of helping people feel confident and beautiful.
+        Growing up surrounded by family entrepreneurs, I had always been drawn to creativity and business, etc...
     </p>
 
-    <figure class="centered-media">
-        <img src="A84DDC8B-BD14-40B3-BE3A-7CA3E26D671C_1_105_c.jpeg" 
-             alt="Another lash client example" 
-             width="600">
-    </figure>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="E4160534-3C6A-4C5F-B355-578FE26526AA_1_105_c.jpeg" alt="Lash client 1">
+            <p class="caption">An example of one of my lash clients</p>
+        </div>
+
+        <div class="slide fade">
+            <img src="A84DDC8B-BD14-40B3-BE3A-7CA3E26D671C_1_105_c.jpeg" alt="Lash client 2">
+            <p class="caption">Another lash client example</p>
+        </div>
+
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
 
 </section>
+
 
 
         <!-- Section 3: Skateboarding -->
