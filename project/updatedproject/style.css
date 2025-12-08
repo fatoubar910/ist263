@@ -271,10 +271,11 @@ iframe {
 }
 
 .slideshow-container {
-    max-width: 350px;   /* SMALLER size */
+    max-width: 250px;   /* Smaller size */
     position: relative;
     margin: auto;
 }
+
 
 .slide {
     display: none;
