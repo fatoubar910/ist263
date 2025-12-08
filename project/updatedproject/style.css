@@ -269,3 +269,10 @@ iframe {
 .test-font {
     font-family: 'Lora', serif;
 }
+
+.centered-media img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centers image */
+}
