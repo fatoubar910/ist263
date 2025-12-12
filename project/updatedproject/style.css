@@ -307,3 +307,22 @@ iframe {
 
 .prev { left: 0; }
 .next { right: 0; }
+
+.hero {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
