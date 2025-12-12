@@ -3,149 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume & Skills - Fatoumata Barry</title>
+    <title>Skills - Fatoumata Barry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="skills.html">Skills</a> |
-    <a href="personalpage.html">Personal</a> |
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="personalpage.html">Personal</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<main>
-
-    <!-- Resume Section -->
+    <!-- Resume Section in a Flexbox -->
     <section class="resume-flexbox">
-        <!-- Left Column: Resume Content -->
         <div class="resume-box">
             <h2>Professional Overview</h2>
 
-            <!-- Education -->
-            <div class="resume-section">
-                <h3>Education</h3>
-                <p><strong>Syracuse University</strong><br>
-                B.S. Information Management & Technology, Minor: Marketing<br>
-                GPA: 3.3 • Dean’s List<br>
-                Organizations: NABA, ASU</p>
-            </div>
+            <h3>Education</h3>
+            <p><strong>Syracuse University</strong><br>
+            Bachelor of Science in Information Management & Technology<br>
+            Minor in Marketing<br>
+            GPA: 3.3<br>
+            Dean’s List<br>
+            Organizations: NABA, African Student Union</p>
 
-            <!-- Experience -->
-            <div class="resume-section">
-                <h3>Professional Experience</h3>
-                <ul>
-                    <li><strong>Founder / Lash Artist — JustMinkedIt</strong> (Sept 2024 – Present)<br>
-                        • Lash services, scheduling, client records.<br>
-                        • Social media content & brand visibility.
-                    </li>
-                    <li><strong>Summer IT Intern — Big Brothers Big Sisters NYC</strong> (Jul 2024 – Aug 2024)<br>
-                        • College visits coordination, database support, tech assistance.<br>
-                        • Designed promotional materials.
-                    </li>
-                    <li><strong>Student Support Roles — Syracuse University</strong> (Aug 2023 – Present)<br>
-                        • Assisted residence hall operations, maintained systems, tutored students.
-                    </li>
-                </ul>
-            </div>
+            <h3>Experience</h3>
+            <ul>
+                <li>
+                    <strong>Founder / Lash Artist — JustMinkedIt</strong> (Sept 2024 – Present)<br>
+                    • Customized lash extension services, client management, and scheduling.<br>
+                    • Digital marketing content creation and brand promotion.
+                </li>
+                <li>
+                    <strong>Summer IT Intern — Big Brothers Big Sisters of NYC</strong> (Jul 2024 – Aug 2024)<br>
+                    • Coordinated college representative visits, provided database support.<br>
+                    • Assisted workshops and designed promotional materials.
+                </li>
+                <li>
+                    <strong>Student Support Roles — Syracuse University</strong> (Aug 2023 – Present)<br>
+                    • Assisted in residence hall operations, tutoring, and student support.
+                </li>
+            </ul>
 
-            <!-- Projects -->
-            <div class="resume-section">
-                <h3>Projects</h3>
-                <ul>
-                    <li><strong>Syracutie Tops Business Plan — Accounting 201</strong><br>
-                        • Business plan, marketing strategy, financial forecasts.
-                    </li>
-                    <li><strong>Data Flow Diagram Project — IST 352</strong><br>
-                        • Level-0 & Level-1 DFD, workflow improvements.
-                    </li>
-                </ul>
-            </div>
+            <h3>Projects</h3>
+            <ul>
+                <li>
+                    <strong>Syracutie Tops Business Plan</strong> (Accounting 201, Spring 2025)<br>
+                    • Full business plan including marketing strategy and financial projections.
+                </li>
+                <li>
+                    <strong>Data Flow Diagram (DFD) Project</strong> (IST 352, Fall 2024)<br>
+                    • Level-0 & Level-1 DFDs for clinic workflow and efficiency improvements.
+                </li>
+            </ul>
 
-            <!-- Technical Skills -->
-            <div class="resume-section">
-                <h3>Technical Skills</h3>
-                <p>Python, R, HTML • Excel, Word, Canva • Data Analysis, IT Support, Visualization, Social Media</p>
-            </div>
+            <h3>Technical Skills</h3>
+            <p>Python, R, HTML, Excel, Word, Canva, Data Analysis, IT Support, Data Visualization, Social Media Management, Problem Solving, Content Creation</p>
 
-            <!-- Leadership / Extracurricular -->
-            <div class="resume-section">
-                <h3>Leadership & Extracurricular</h3>
-                <p>Social Media Manager — NABA (Spring 2024 – Present)<br>
-                   • Content strategies, posts & graphics, account management.
-                </p>
-            </div>
-        </div>
-
-        <!-- Right Column: Optional Resume Snapshot -->
-        <div class="resume-box">
-            <h2>Resume Snapshot</h2>
-            <img src="resume-preview.png" alt="Resume Preview" style="width:100%; border-radius:10px;">
+            <h3>Leadership & Extracurriculars</h3>
+            <p>Social Media Manager, NABA — Developed and executed content strategies, managed accounts, and maintained branding.</p>
         </div>
     </section>
+
+    <!-- Page Header for Skills -->
+    <header>
+        <h1 class="skills-heading">Technical Skills</h1>
+    </header>
 
     <!-- Skills Section -->
-    <h1 class="skills-heading">Technical Skills</h1>
-    <section class="skills-container">
+    <main>
+        <section>
+            <h2 class="visually-hidden">Skill Categories</h2>
+            <div class="skills-container">
 
-        <article class="skill-category">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Python Programming</li>
-                <li>Data Analysis & Visualization</li>
-                <li>Microsoft Excel & Word</li>
-                <li>IT Support & Troubleshooting</li>
-                <li>Database Management</li>
-            </ul>
-        </article>
+                <article class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Data Analysis & Visualization</li>
+                        <li>Microsoft Excel & Word</li>
+                        <li>IT Support & Troubleshooting</li>
+                        <li>Database Management</li>
+                    </ul>
+                </article>
 
-        <article class="skill-category">
-            <h3>Creative & Marketing Skills</h3>
-            <ul>
-                <li>Social Media Strategy</li>
-                <li>Canva Design & Branding</li>
-                <li>Content Creation</li>
-                <li>Digital Marketing</li>
-                <li>Visual Storytelling</li>
-            </ul>
-        </article>
+                <article class="skill-category">
+                    <h3>Creative & Marketing Skills</h3>
+                    <ul>
+                        <li>Social Media Strategy</li>
+                        <li>Canva Design & Branding</li>
+                        <li>Content Creation</li>
+                        <li>Digital Marketing</li>
+                        <li>Visual Storytelling</li>
+                    </ul>
+                </article>
 
-        <article class="skill-category">
-            <h3>Professional Qualities</h3>
-            <ul>
-                <li>Problem Solving</li>
-                <li>Leadership & Collaboration</li>
-                <li>Communication</li>
-                <li>Adaptability</li>
-                <li>Time Management</li>
-            </ul>
-        </article>
+                <article class="skill-category">
+                    <h3>Professional Qualities</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Leadership & Collaboration</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                        <li>Time Management</li>
+                    </ul>
+                </article>
 
-        <article class="skill-category">
-            <h3>Tools & Platforms</h3>
-            <ul>
-                <li>Microsoft Office Suite</li>
-                <li>Canva</li>
-                <li>Google Workspace</li>
-                <li>Tableau</li>
-                <li>Slack & Trello</li>
-            </ul>
-        </article>
+                <article class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Microsoft Office Suite</li>
+                        <li>Canva</li>
+                        <li>Google Workspace</li>
+                        <li>Tableau</li>
+                        <li>Slack & Trello</li>
+                    </ul>
+                </article>
 
-    </section>
+            </div>
+        </section>
 
-</main>
+        <!-- Table + Image Flexbox -->
+        <section class="skills-flexbox">
+            <h2 class="visually-hidden">Skills Table and Illustration</h2>
+            <div class="skillstable">
+                <table class="skill-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Data Analysis</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Excel</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Marketing</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="skillsimage">
+                <img src="https://peopel-su.github.io/ist263/images/skill_3775447.png" alt="Skills Illustration">
+            </div>
+        </section>
+    </main>
 
-<!-- Footer -->
-<footer>
-    <hr>
-    <p>&copy; 2025 Fatoumata Barry</p>
-    <p class="tagline">“Building ideas through creativity and technology.”</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2025 Fatoumata Barry</p>
+        <p class="tagline">“Building ideas through creativity and technology.”</p>
+    </footer>
 
 </body>
 </html>
