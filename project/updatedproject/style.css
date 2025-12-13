@@ -330,19 +330,30 @@ iframe {
 /* Resume Flexbox */
 .resume-flexbox {
     display: flex;
-    justify-content: center;   /* centers the resume on the page */
+    justify-content: center;   /* centers the box on the page */
     padding: 20px;
 }
 
 .resume-box {
-    background-color: #E6DED1;  /* matches skill boxes */
+    background-color: #E6DED1;  /* matches the skill boxes */
     border-radius: 12px;
-    padding: 20px;
-    width: 90%;                 /* wider box for readability */
-    max-width: 800px;
-    text-align: left;           /* keeps resume formatting readable */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    overflow-y: auto;           /* scroll if content is too tall */
-    max-height: 700px;          /* adjust to fit your layout */
+    padding: 30px;
+    width: 90%;                 /* responsive width */
+    max-width: 900px;           /* matches skills container */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Headings inside resume */
+.resume-box h2 {
+    text-align: center;  /* optional: center the main title */
+    margin-bottom: 20px;
+}
+
+.resume-box h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #2E2B26;  /* same as skill headings */
 }
 
