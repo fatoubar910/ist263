@@ -365,9 +365,9 @@ iframe {
 
 /* Only affect images on personal page */
 .personal-page img {
-    max-width: 400px;  /* adjust width as needed */
-    width: 100%;       /* allows responsiveness */
-    height: auto;      /* keeps aspect ratio */
+    max-width: 300px;  /* smaller width */
+    width: 100%;       /* keeps responsiveness */
+    height: auto;      /* preserves aspect ratio */
     display: block;
     margin: 0 auto;    /* centers images */
 }
