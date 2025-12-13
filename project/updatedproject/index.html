@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Fatoumata Barry</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
-    <link rel="apple-touch-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Fatoumata Barry</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Skip to Content -->
-    <a href="#main-content" class="skip-link">Skip to Content</a>
+<!-- Skip to Content -->
+<a href="#main-content" class="skip-link">Skip to Content</a>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="skills.html">Skills</a> |
-        <a href="personalpage.html">Personal</a> |
-        <a href="contact.html">Contact</a> |
-    </nav>
+<!-- Navigation -->
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="skills.html">Skills</a> |
+    <a href="personalpage.html">Personal</a> |
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>I’m Fatoumata Barry — Information Management & Technology Student specializing in Data Analytics</h1>
-        <a href="skills.html" class="hero-button">View My Work</a>
-    </section>
+<!-- Hero Section -->
+<section class="hero" id="main-content">
+    <h1>I’m Fatoumata Barry — Information Management & Technology Student specializing in Data Analytics</h1>
+    <a href="skills.html" class="hero-button">View My Work</a>
+</section>
 
-    <!-- Main Content -->
-    <main id="main-content" tabindex="-1">
+<!-- Main Content -->
+<main>
+    <section class="fade-in">
         <header>
-            <h1>Fatoumata Barry's Biography</h1>
+            <h1>About Me</h1>
         </header>
+        <article>
+            <p>Hello, my name is <strong>Fatoumata Barry</strong>, and I’m a junior majoring in Information Management and Technology with a minor in Marketing. I’m passionate about pursuing a career in Risk and Compliance within consulting. My skills include Data Analysis, IT Support, Problem Solving, Data Visualization, Social Media Management, and Content Creation. I am proficient in tools like Excel, Word, and Canva.</p>
+            <figure style="max-width:450px; margin:auto;">
+                <img src="19A11418-CF7E-4DF4-853B-E60C5B08338B.jpeg" 
+                     alt="Fatoumata Barry smiling in front of campus" 
+                     style="width:100%; height:auto; display:block; border-radius:12px;">
+                <figcaption style="text-align:center; margin-top:8px;">Fatoumata Barry, junior at Syracuse University</figcaption>
+            </figure>
+        </article>
+    </section>
+</main>
 
-        <section>
-            <h2 class="visually-hidden">About Fatoumata Barry</h2>
-            <article>
-                <p>
-                    Hello, my name is <strong>Fatoumata Barry</strong>, and I’m a junior majoring in Information Management and Technology with a minor in Marketing. 
-                    I’m passionate about pursuing a career in Risk and Compliance within the consulting industry. 
-                    My skill set includes Data Analysis, IT Support, Problem Solving, Data Visualization, Social Media Management, and Content Creation. 
-                    I am also proficient in tools such as Excel, Word, and Canva.
-                </p>
+<!-- Footer -->
+<footer>
+    <hr>
+    <p>&copy; 2025 Fatoumata Barry</p>
+    <p class="tagline">“Building ideas through creativity and technology.”</p>
+</footer>
 
-                <figure style="max-width:450px; margin:auto;">
-                    <img src="19A11418-CF7E-4DF4-853B-E60C5B08338B.jpeg" 
-                        alt="Fatoumata Barry smiling in front of campus" 
-                        style="width:100%; height:auto; display:block;">
-                    <figcaption style="text-align:center; margin-top:8px;">
-                        Fatoumata Barry, junior at Syracuse University
-                    </figcaption>
-                </figure>
+<script>
+// Fade-in sections on scroll (extra credit JS)
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.3, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+    });
+}, appearOptions);
 
-            </article>
-        </section>
-
-    </main>
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+</script>
 
 </body>
 </html>

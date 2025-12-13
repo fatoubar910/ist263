@@ -1,159 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Fatoumata Barry</title>
-
-    
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
-
-    <link rel="apple-touch-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal - Fatoumata Barry</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-
-function changeSlide(n) {
-    slideIndex += n - 1;
-    showSlides();
-}
-</script>
-
 <body class="personal-page">
 
-    <!-- Skip to Content -->
-    <a href="#main-content" class="skip-link">Skip to Content</a>
+<!-- Skip to Content -->
+<a href="#main-content" class="skip-link">Skip to Content</a>
 
-    <!-- Navigation -->
+<!-- Navigation -->
 <nav>
     <a href="index.html">Home</a> |
     <a href="skills.html">Skills</a> |
     <a href="personalpage.html">Personal</a> |
-    <a href="contact.html">Contact</a> |
+    <a href="contact.html">Contact</a>
 </nav>
 
+<main id="main-content" tabindex="-1">
+    <header class="page-header">
+        <h1>Personal Page</h1>
+        <p class="page-subtitle">Learn a little about my life beyond school and work.</p>
+    </header>
 
+    <!-- Background -->
+    <section>
+        <h2>Growing Up in Brooklyn</h2>
+        <p>I grew up in a vibrant mix of Caribbean and West African cultures. As a Guinean-American, my childhood was shaped by a blend of traditions — weekends spent attending Quranic school and dance classes, and helping my dad at his clothing store. These experiences taught me responsibility, perseverance, and creativity.</p>
+        <figure class="centered-media">
+            <img src="image.png" alt="Flatbush neighborhood in Brooklyn">
+            <figcaption>Flatbush; neighborhood in Brooklyn, NY</figcaption>
+        </figure>
+    </section>
 
-
-    <!-- Main Content -->
-    <main id="main-content" tabindex="-1">
-
-        <!-- Page Header -->
-        <header class="page-header">
-            <h1>Personal Page</h1>
-            <p class="page-subtitle">
-                Learn a little about my life beyond school and work.
-            </p>
-        </header>
-
-        <!-- Section 1: Background -->
-        <section>
-            <h2>Growing Up in Brooklyn</h2>
-            <p>
-                I grew up in a vibrant mix of Caribbean and West African cultures. As a Guinean-American, my childhood was shaped by a blend of traditions — weekends spent attending Quranic school and dance classes, and helping my dad at his clothing store. Growing up around family entrepreneurs taught me responsibility, perseverance, and the value of hard work from an early age. These experiences instilled in me a strong work ethic and a love for creativity, which continue to shape my academic pursuits, professional goals, and personal passions today.
-            </p>
-            <figure class="centered-media">
-                <img src="image.png" alt="Flatbush neighborhood in Brooklyn" width="600" height="400">
-                <figcaption>Flatbush; neighborhood in Brooklyn, NY</figcaption>
-            </figure>
-        </section>
-
-        <!-- Section 2: Lash Tech -->
-<!-- Section 2: Lash Tech -->
-<section>
-    <h2>Lash Tech</h2>
-     
-    <p>
-        My journey as a lash tech began during quarantine, when I would just practice on dolls out of boredom. 
-        Growing up surrounded by family entrepreneurs, I had always been drawn to creativity and business. 
-        Once I arrived at college, I started practicing on my roommate, and by the summer of 2024, I took a 
-        professional lash course. In July 2024, I officially launched my business, and ever since, I have loved 
-        owning and managing my own venture. Running my business has taught me discipline, customer service, 
-        creativity, and the joy of helping people feel confident and beautiful.
-    </p>
-
-    <div class="slideshow-container">
-        <div class="slide fade">
-            <img src="E4160534-3C6A-4C5F-B355-578FE26526AA_1_105_c.jpeg" alt="Lash client 1">
-            <p class="caption">An example of one of my lash clients</p>
-        </div>
-
-        <div class="slide fade">
-            <img src="A84DDC8B-BD14-40B3-BE3A-7CA3E26D671C_1_105_c.jpeg" alt="Lash client 2">
-            <p class="caption">Another lash client example</p>
-        </div>
-
-        <!-- Navigation arrows -->
-        <a class="prev" onclick="changeSlide(-1)">❮</a>
-        <a class="next" onclick="changeSlide(1)">❯</a>
-    </div>
-
-</section>
-
-
-
-        <!-- Section 3: Skateboarding -->
-        <section>
-            <h2>Skateboarding</h2>
-            <div class="hobby-flexbox row-reverse">
-                <div class="hobby-media">
-                    <img src="8FAB15F4-DD34-4CD2-84CC-E23DF362620A_1_105_c.jpeg" alt="Fatoumata skateboarding">
-    
-                </div>
-                <div class="hobby-text">
-                    <p>
-                       When I was younger, my father bought me a penny board, and I absolutely loved it. Over the years, I grew out of it, but this summer I picked it back up. Since then, I’ve been going to Prospect Park in the mornings to ride my skateboard. It’s incredibly freeing and reminds me of the joy of rediscovering something I love.
-                    </p>
-                </div>
+    <!-- Lash Tech -->
+    <section>
+        <h2>Lash Tech</h2>
+        <p>My journey as a lash tech began during quarantine when I would practice on dolls. By summer 2024, I took a professional course and officially launched my business. Running it has taught me discipline, creativity, and the joy of helping people feel confident.</p>
+        <div class="slideshow-container" aria-label="Lash Client Slideshow">
+            <div class="slide fade">
+                <img src="E4160534-3C6A-4C5F-B355-578FE26526AA_1_105_c.jpeg" alt="Lash client 1">
+                <p class="caption">An example of one of my lash clients</p>
             </div>
-        </section>
+            <div class="slide fade">
+                <img src="A84DDC8B-BD14-40B3-BE3A-7CA3E26D671C_1_105_c.jpeg" alt="Lash client 2">
+                <p class="caption">Another lash client example</p>
+            </div>
+            <a class="prev" aria-label="Previous Slide" onclick="changeSlide(-1)">❮</a>
+            <a class="next" aria-label="Next Slide" onclick="changeSlide(1)">❯</a>
+        </div>
+    </section>
 
-        <!-- Section 4: Traveling -->
-        <section>
-            <h2>Traveling</h2>
-            <p>
-               Traveling has been a passion of mine from a young age. I’ve visited countries like Guinea, Belgium, France, and London (as pictured below), and each trip gives me a sense of freedom and the chance to immerse myself in different cultures. In the future, I hope to travel even more and eventually live in another country. I’m especially excited to be going abroad to London next semester!
-            </p>
-            <figure class="centered-media">
-                <img src="65163258-C14F-4368-8087-46A70823783C_1_105_c.jpeg" alt="Travel destinations">
-            
-            </figure>
-        </section>
+    <!-- Skateboarding -->
+    <section>
+        <h2>Skateboarding</h2>
+        <div class="hobby-flexbox row-reverse">
+            <div class="hobby-media">
+                <img src="8FAB15F4-DD34-4CD2-84CC-E23DF362620A_1_105_c.jpeg" alt="Fatoumata skateboarding">
+            </div>
+            <div class="hobby-text">
+                <p>When I was younger, my father bought me a penny board, and I absolutely loved it. Over the years, I grew out of it, but this summer I picked it back up. Since then, I’ve been going to Prospect Park in the mornings to ride my skateboard. It’s incredibly freeing and reminds me of the joy of rediscovering something I love.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Section 5: School & Social Life -->
-        <section>
-            <h2>School & Social Life</h2>
-            <p>
-               I love my friends, and the community I’ve built here at Syracuse is truly amazing. I never expected to find people who understand me and push me to be better. I’ve found communities that reflect all parts of my identity, and I’m so grateful for that. My time here is a mix of going to class, attending org events, hanging out with friends, and completing fun random side quests. Below is a picture from our first-ever ski trip!
-            </p>
-            <figure class="centered-media">
-                <img src="5B4C25B0-F56A-45B7-9152-2557C55F35B7_1_201_a.jpeg" alt="College social life event">
-            </figure>
-        </section>
+    <!-- Traveling -->
+    <section>
+        <h2>Traveling</h2>
+        <p>Traveling has been a passion of mine from a young age. I’ve visited countries like Guinea, Belgium, France, and London (as pictured below), and each trip gives me a sense of freedom and the chance to immerse myself in different cultures. In the future, I hope to travel even more and eventually live in another country. I’m especially excited to be going abroad to London next semester!</p>
+        <figure class="centered-media">
+            <img src="65163258-C14F-4368-8087-46A70823783C_1_105_c.jpeg" alt="Travel destinations">
+        </figure>
+    </section>
 
-    </main>
+    <!-- School & Social Life -->
+    <section>
+        <h2>School & Social Life</h2>
+        <p>I love my friends, and the community I’ve built here at Syracuse is truly amazing. I never expected to find people who understand me and push me to be better. I’ve found communities that reflect all parts of my identity, and I’m so grateful for that. My time here is a mix of going to class, attending org events, hanging out with friends, and completing fun random side quests. Below is a picture from our first-ever ski trip!</p>
+        <figure class="centered-media">
+            <img src="5B4C25B0-F56A-45B7-9152-2557C55F35B7_1_201_a.jpeg" alt="College social life event">
+        </figure>
+    </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <hr>
-        <p>&copy; 2025 Fatoumata Barry</p>
-        <p class="tagline">“Building ideas through creativity and technology.”</p>
-    </footer>
+<!-- Footer -->
+<footer>
+    <hr>
+    <p>&copy; 2025 Fatoumata Barry</p>
+    <p class="tagline">“Building ideas through creativity and technology.”</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+let slides, slideInterval;
+showSlides();
+
+function showSlides() {
+    slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].style.opacity = 0;
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.opacity = 1;
+    slideInterval = setTimeout(showSlides, 3000);
+}
+
+// Manual controls
+function changeSlide(n) {
+    clearTimeout(slideInterval);
+    slideIndex += n - 1;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    showSlides();
+}
+
+// Pause slideshow on hover
+document.querySelectorAll('.slideshow-container').forEach(slideshow => {
+    slideshow.addEventListener('mouseenter', () => clearTimeout(slideInterval));
+    slideshow.addEventListener('mouseleave', showSlides);
+});
+</script>
 
 </body>
 </html>
