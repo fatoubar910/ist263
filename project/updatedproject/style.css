@@ -197,3 +197,36 @@ footer .tagline {
         height: auto;
     }
 }
+/* ===========================
+   Resume Flexbox Fix
+   =========================== */
+.resume-flexbox {
+    display: flex;
+    justify-content: center;   /* centers the box horizontally */
+    flex-wrap: wrap;           /* allows multiple boxes if added */
+    gap: 20px;                 /* space between boxes */
+    padding: 20px;
+}
+
+.resume-box {
+    background-color: #E6DED1;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1 1 600px;           /* responsive width */
+    max-width: 900px;          /* prevents stretching too much */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Stack nicely on smaller screens */
+@media (max-width: 768px) {
+    .resume-flexbox {
+        flex-direction: column; /* stack vertically on mobile */
+        align-items: center;
+    }
+    .resume-box {
+        width: 90%;
+        max-width: 100%;
+    }
+}
