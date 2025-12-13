@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal - Fatoumata Barry</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000);
+    }
+
+    function changeSlide(n) {
+        slideIndex += n - 1;
+        showSlides();
+    }
+    </script>
 </head>
 <body class="personal-page">
 
@@ -19,14 +43,19 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main Content -->
     <main id="main-content" tabindex="-1">
 
-        <!-- Growing Up -->
+        <header class="page-header">
+            <h1>Personal Page</h1>
+            <p class="page-subtitle">
+                Learn a little about my life beyond school and work.
+            </p>
+        </header>
+
         <section>
             <h2>Growing Up in Brooklyn</h2>
             <p>
-                I grew up in a vibrant mix of Caribbean and West African cultures. As a Guinean-American, my childhood was shaped by a blend of traditions — weekends spent attending Quranic school and dance classes, and helping my dad at his clothing store. Growing up around family entrepreneurs taught me responsibility, perseverance, and the value of hard work from an early age. These experiences instilled in me a strong work ethic and a love for creativity, which continue to shape my academic pursuits, professional goals, and personal passions today.
+                I grew up in a vibrant mix of Caribbean and West African cultures. As a Guinean-American, my childhood was shaped by a blend of traditions — weekends spent attending Quranic school and dance classes, and helping my dad at his clothing store. Growing up around family entrepreneurs taught me responsibility, perseverance, and the value of hard work from an early age.
             </p>
             <figure class="centered-media">
                 <img src="image.png" alt="Flatbush neighborhood in Brooklyn" width="600" height="400">
@@ -34,19 +63,15 @@
             </figure>
         </section>
 
-        <!-- Lash Tech -->
         <section>
             <h2>Lash Tech</h2>
             <p>
-                My journey as a lash tech began during quarantine, when I would just practice on dolls out of boredom. 
-                Growing up surrounded by family entrepreneurs, I had always been drawn to creativity and business. 
-                Once I arrived at college, I started practicing on my roommate, and by the summer of 2024, I took a 
-                professional lash course. In July 2024, I officially launched my business, and ever since, I have loved 
-                owning and managing my own venture. Running my business has taught me discipline, customer service, 
-                creativity, and the joy of helping people feel confident and beautiful.
+                My journey as a lash tech began during quarantine, when I practiced on dolls out of boredom. By summer 2024, I completed a professional lash course and launched my business. Running it has taught me discipline, customer service, creativity, and the joy of helping people feel confident.
             </p>
 
-            <div class="slideshow-container" role="region">
+            <div class="slideshow-container" role="region" aria-labelledby="lash-slideshow">
+                <h3 id="lash-slideshow" class="visually-hidden">Lash Client Slideshow</h3>
+
                 <div class="slide fade">
                     <img src="E4160534-3C6A-4C5F-B355-578FE26526AA_1_105_c.jpeg" alt="Lash client 1">
                     <p class="caption">An example of one of my lash clients</p>
@@ -57,13 +82,11 @@
                     <p class="caption">Another lash client example</p>
                 </div>
 
-                <!-- Navigation arrows -->
-                <a class="prev" onclick="changeSlide(-1)">❮</a>
-                <a class="next" onclick="changeSlide(1)">❯</a>
+                <button class="prev" onclick="changeSlide(-1)" aria-label="Previous Slide">❮</button>
+                <button class="next" onclick="changeSlide(1)" aria-label="Next Slide">❯</button>
             </div>
         </section>
 
-        <!-- Skateboarding -->
         <section>
             <h2>Skateboarding</h2>
             <div class="hobby-flexbox row-reverse">
@@ -72,28 +95,26 @@
                 </div>
                 <div class="hobby-text">
                     <p>
-                        When I was younger, my father bought me a penny board, and I absolutely loved it. Over the years, I grew out of it, but this summer I picked it back up. Since then, I’ve been going to Prospect Park in the mornings to ride my skateboard. It’s incredibly freeing and reminds me of the joy of rediscovering something I love.
+                        When I was younger, my father bought me a penny board, and I absolutely loved it. Over the years, I grew out of it, but this summer I picked it back up. Since then, I’ve been going to Prospect Park in the mornings to ride my skateboard. It’s incredibly freeing.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Traveling -->
         <section>
             <h2>Traveling</h2>
             <p>
-                Traveling has been a passion of mine from a young age. I’ve visited countries like Guinea, Belgium, France, and London (as pictured below), and each trip gives me a sense of freedom and the chance to immerse myself in different cultures. In the future, I hope to travel even more and eventually live in another country. I’m especially excited to be going abroad to London next semester!
+                Traveling has been a passion of mine from a young age. I’ve visited countries like Guinea, Belgium, France, and London (as pictured below). Each trip gives me a sense of freedom and the chance to immerse myself in different cultures. I plan to travel more and eventually live abroad. I’m especially excited to go to London next semester!
             </p>
             <figure class="centered-media">
                 <img src="65163258-C14F-4368-8087-46A70823783C_1_105_c.jpeg" alt="Travel destinations">
             </figure>
         </section>
 
-        <!-- School & Social Life -->
         <section>
             <h2>School & Social Life</h2>
             <p>
-                I love my friends, and the community I’ve built here at Syracuse is truly amazing. I never expected to find people who understand me and push me to be better. I’ve found communities that reflect all parts of my identity, and I’m so grateful for that. My time here is a mix of going to class, attending org events, hanging out with friends, and completing fun random side quests. Below is a picture from our first-ever ski trip!
+                I love my friends, and the community I’ve built here at Syracuse is amazing. I’ve found communities that reflect all parts of my identity. My time here includes class, org events, hanging with friends, and completing fun side quests. Below is a picture from our first-ever ski trip!
             </p>
             <figure class="centered-media">
                 <img src="5B4C25B0-F56A-45B7-9152-2557C55F35B7_1_201_a.jpeg" alt="College social life event">
@@ -102,32 +123,11 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <hr>
         <p>&copy; 2025 Fatoumata Barry</p>
         <p class="tagline">“Building ideas through creativity and technology.”</p>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000);
-        }
-
-        function changeSlide(n) {
-            slideIndex += n - 1;
-            showSlides();
-        }
-    </script>
 </body>
 </html>
