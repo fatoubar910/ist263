@@ -5,32 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal - Fatoumata Barry</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
-    <link rel="apple-touch-icon" href="favicon.ico">
 </head>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-
-function changeSlide(n) {
-    slideIndex += n - 1;
-    showSlides();
-}
-</script>
-
 <body class="personal-page">
 
     <!-- Skip to Content -->
@@ -47,15 +22,7 @@ function changeSlide(n) {
     <!-- Main Content -->
     <main id="main-content" tabindex="-1">
 
-        <!-- Page Header -->
-        <header class="page-header">
-            <h1>Personal Page</h1>
-            <p class="page-subtitle">
-                Learn a little about my life beyond school and work.
-            </p>
-        </header>
-
-        <!-- Section 1: Background -->
+        <!-- Growing Up -->
         <section>
             <h2>Growing Up in Brooklyn</h2>
             <p>
@@ -67,7 +34,7 @@ function changeSlide(n) {
             </figure>
         </section>
 
-        <!-- Section 2: Lash Tech -->
+        <!-- Lash Tech -->
         <section>
             <h2>Lash Tech</h2>
             <p>
@@ -79,8 +46,7 @@ function changeSlide(n) {
                 creativity, and the joy of helping people feel confident and beautiful.
             </p>
 
-            <!-- Slideshow -->
-            <div class="slideshow-container" role="region" aria-label="Lash Client Slideshow">
+            <div class="slideshow-container" role="region">
                 <div class="slide fade">
                     <img src="E4160534-3C6A-4C5F-B355-578FE26526AA_1_105_c.jpeg" alt="Lash client 1">
                     <p class="caption">An example of one of my lash clients</p>
@@ -92,12 +58,12 @@ function changeSlide(n) {
                 </div>
 
                 <!-- Navigation arrows -->
-                <a class="prev" role="button" aria-label="Previous Slide" onclick="changeSlide(-1)">❮</a>
-                <a class="next" role="button" aria-label="Next Slide" onclick="changeSlide(1)">❯</a>
+                <a class="prev" onclick="changeSlide(-1)">❮</a>
+                <a class="next" onclick="changeSlide(1)">❯</a>
             </div>
         </section>
 
-        <!-- Section 3: Skateboarding -->
+        <!-- Skateboarding -->
         <section>
             <h2>Skateboarding</h2>
             <div class="hobby-flexbox row-reverse">
@@ -112,7 +78,7 @@ function changeSlide(n) {
             </div>
         </section>
 
-        <!-- Section 4: Traveling -->
+        <!-- Traveling -->
         <section>
             <h2>Traveling</h2>
             <p>
@@ -123,7 +89,7 @@ function changeSlide(n) {
             </figure>
         </section>
 
-        <!-- Section 5: School & Social Life -->
+        <!-- School & Social Life -->
         <section>
             <h2>School & Social Life</h2>
             <p>
@@ -143,5 +109,25 @@ function changeSlide(n) {
         <p class="tagline">“Building ideas through creativity and technology.”</p>
     </footer>
 
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+
+        function changeSlide(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
 </body>
 </html>
