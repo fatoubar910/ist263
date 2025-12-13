@@ -363,3 +363,11 @@ iframe {
     color: #2E2B26;
 }
 
+/* Only affect images on personal page */
+.personal-page img {
+    max-width: 400px;  /* adjust width as needed */
+    width: 100%;       /* allows responsiveness */
+    height: auto;      /* keeps aspect ratio */
+    display: block;
+    margin: 0 auto;    /* centers images */
+}
