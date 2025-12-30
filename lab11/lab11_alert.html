@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 11 - On-Page Messages</title>
-    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate2.css">
+    <title>Lab 11 - Alert Boxes</title>
+    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate.css">
 
     <style>
         /* Flex container for walnuts */
@@ -21,23 +21,15 @@
             width: 100px;
             order: 1; /* Default order for shuffle */
         }
-
-        /* Message display */
-        #message {
-            text-align: center;
-            font-size: 1.5em;
-            margin-top: 20px;
-            font-weight: bold;
-        }
     </style>
 
     <script>
         function WinnerMessage() {
-            document.getElementById("message").innerHTML = "You Won!";
+            alert("You Won");
         }
 
         function TryAgain() {
-            document.getElementById("message").innerHTML = "Wrong Shell - Try Again";
+            alert("Wrong Shell - Try Again");
         }
 
         function ShuffleShells() {
@@ -55,7 +47,5 @@
         <img id="second" src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" onclick="TryAgain();">
         <img id="third" src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" onclick="TryAgain();">
     </div>
-
-    <div id="message"></div>
 </body>
 </html>
