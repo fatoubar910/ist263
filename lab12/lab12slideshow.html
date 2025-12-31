@@ -4,108 +4,51 @@
     <meta charset="utf-8">
     <title>Lab 12 Slideshow</title>
     <style>
-        /* ===========================
-           Global Styles
-           =========================== */
         body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
             background-color: #111111;
             color: #ffffff;
-            margin: 0;
-            padding: 0;
         }
-
-        /* Slideshow container */
         #slideshow-container {
             background-color: #000000;
             width: 1200px;
-            margin: auto;
-            overflow: auto;
-            padding: 20px;
+            margin: auto;       
         }
-
-        /* Big images and info layout */
-        #bigimages {
-            float: left;
-            width: 50%;
-        }
-
-        #planetinfo {
-            float: left;
-            width: 50%;
-            padding: 20px;
-        }
-
-        /* Thumbnails row */
-        #thumbnails {
-            width: 100%;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        #thumbnails img {
-            width: 100px;
-            margin: 5px;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: border 0.3s;
-        }
-
-        #thumbnails img:hover {
-            border: 2px solid #ffffff;
-        }
-
+        #bigimages {margin-right: 100px; float: left; width: 50%;}
+        #planetinfo {padding: 100px; float: left; width: 50%;}
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px; text-align: center;} 
+        #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb 
+        {width: 100px; margin:5px; cursor:pointer;}
+        
         /* Hide all large images except Mercury initially */
         #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
             display: none;
         }
-
-        /* Hide all info except Mercury initially */
+        /* Hide all planet info except Mercury initially */
         #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
             display: none;
         }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            #bigimages, #planetinfo {
-                float: none;
-                width: 100%;
-                text-align: center;
-            }
-
-            #thumbnails img {
-                width: 80px;
-                margin: 5px;
-            }
-        }
     </style>
-
     <script>
-        // Function to hide all planets and info
+        // Hide all planets and info
         function PlanetsOff() {
             const planets = ['mercury','venus','earth','mars','jupiter','saturn','uranus','neptune'];
             const infos = ['mercuryinfo','venusinfo','earthinfo','marsinfo','jupiterinfo','saturninfo','uranusinfo','neptuneinfo'];
-
-            planets.forEach(planet => document.getElementById(planet).style.display = 'none');
-            infos.forEach(info => document.getElementById(info).style.display = 'none');
+            planets.forEach(p => document.getElementById(p).style.display = 'none');
+            infos.forEach(i => document.getElementById(i).style.display = 'none');
         }
 
-        // Functions to show each planet
-        function MercuryOn() { document.getElementById('mercury').style.display = 'block'; document.getElementById('mercuryinfo').style.display = 'block'; }
-        function VenusOn() { document.getElementById('venus').style.display = 'block'; document.getElementById('venusinfo').style.display = 'block'; }
-        function EarthOn() { document.getElementById('earth').style.display = 'block'; document.getElementById('earthinfo').style.display = 'block'; }
-        function MarsOn() { document.getElementById('mars').style.display = 'block'; document.getElementById('marsinfo').style.display = 'block'; }
-        function JupiterOn() { document.getElementById('jupiter').style.display = 'block'; document.getElementById('jupiterinfo').style.display = 'block'; }
-        function SaturnOn() { document.getElementById('saturn').style.display = 'block'; document.getElementById('saturninfo').style.display = 'block'; }
-        function UranusOn() { document.getElementById('uranus').style.display = 'block'; document.getElementById('uranusinfo').style.display = 'block'; }
-        function NeptuneOn() { document.getElementById('neptune').style.display = 'block'; document.getElementById('neptuneinfo').style.display = 'block'; }
+        // Show selected planet and its info
+        function ShowPlanet(planet) {
+            document.getElementById(planet).style.display = 'block';
+            document.getElementById(planet + 'info').style.display = 'block';
+        }
     </script>
 </head>
-
 <body>
     <div id="slideshow-container">
         <div id="bigimages">
-            <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercury">
+            <img src="https://peopel-su.github.io/ist263/images/mercury.jpg" alt="mercury" id="mercury">
             <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus" id="venus">
             <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth" id="earth">
             <img src="https://peopel-su.github.io/ist263/images/mars.jpg" alt="mars" id="mars">
@@ -114,52 +57,50 @@
             <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" alt="uranus" id="uranus">
             <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" alt="neptune" id="neptune">
         </div>
-
-        <div id="planetinfo">
+        <div id="planetinfo">        
             <h1>Planets Slideshow</h1>
             <div id="mercuryinfo">
                 <h2>Mercury</h2>
-                <p>Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets in the Solar System. It is named after the Greek god Hermes (Ερμής), translated into Latin Mercurius Mercury, god of commerce, messenger of the gods, mediator between gods and mortals.</p>
+                <p>Mercury is the smallest and innermost planet in the Solar System...</p>
             </div>
             <div id="venusinfo">
                 <h2>Venus</h2>
-                <p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. Venus orbits the Sun every 224.7 Earth days.</p>
+                <p>Venus is the second planet from the Sun...</p>
             </div>
             <div id="earthinfo">
                 <h2>Earth</h2>
-                <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life.</p>
+                <p>Earth is the third planet from the Sun...</p>
             </div>
             <div id="marsinfo">
                 <h2>Mars</h2>
-                <p>Mars is a terrestrial planet with a thin atmosphere and surface features similar to the Moon.</p>
+                <p>Mars is a terrestrial planet with a thin atmosphere...</p>
             </div>
             <div id="jupiterinfo">
                 <h2>Jupiter</h2>
-                <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System.</p>
+                <p>Jupiter is the fifth planet and the largest in the Solar System...</p>
             </div>
             <div id="saturninfo">
                 <h2>Saturn</h2>
-                <p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System.</p>
+                <p>Saturn is the sixth planet from the Sun...</p>
             </div>
             <div id="uranusinfo">
                 <h2>Uranus</h2>
-                <p>Uranus is the seventh planet from the Sun, named after the Greek god of the sky.</p>
+                <p>Uranus is the seventh planet from the Sun...</p>
             </div>
             <div id="neptuneinfo">
                 <h2>Neptune</h2>
-                <p>Neptune is the eighth and farthest-known Solar planet from the Sun.</p>
+                <p>Neptune is the eighth planet from the Sun...</p>
             </div>
         </div>
-
         <div id="thumbnails">
-            <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" alt="mercury" onclick="PlanetsOff(); MercuryOn();">
-            <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus" onclick="PlanetsOff(); VenusOn();">
-            <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth" onclick="PlanetsOff(); EarthOn();">
-            <img src="https://peopel-su.github.io/ist263/images/mars.jpg" alt="mars" onclick="PlanetsOff(); MarsOn();">
-            <img src="https://peopel-su.github.io/ist263/images/jupiter.jpg" alt="jupiter" onclick="PlanetsOff(); JupiterOn();">
-            <img src="https://peopel-su.github.io/ist263/images/saturn.jpg" alt="saturn" onclick="PlanetsOff(); SaturnOn();">
-            <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" alt="uranus" onclick="PlanetsOff(); UranusOn();">
-            <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" alt="neptune" onclick="PlanetsOff(); NeptuneOn();">
+            <img src="https://peopel-su.github.io/ist263/images/mercury.jpg" onclick="PlanetsOff(); ShowPlanet('mercury');">
+            <img src="https://peopel-su.github.io/ist263/images/venus.jpg" onclick="PlanetsOff(); ShowPlanet('venus');">
+            <img src="https://peopel-su.github.io/ist263/images/earth.jpg" onclick="PlanetsOff(); ShowPlanet('earth');">
+            <img src="https://peopel-su.github.io/ist263/images/mars.jpg" onclick="PlanetsOff(); ShowPlanet('mars');">
+            <img src="https://peopel-su.github.io/ist263/images/jupiter.jpg" onclick="PlanetsOff(); ShowPlanet('jupiter');">
+            <img src="https://peopel-su.github.io/ist263/images/saturn.jpg" onclick="PlanetsOff(); ShowPlanet('saturn');">
+            <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" onclick="PlanetsOff(); ShowPlanet('uranus');">
+            <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" onclick="PlanetsOff(); ShowPlanet('neptune');">
         </div>
     </div>
 </body>
